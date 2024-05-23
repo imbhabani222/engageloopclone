@@ -1,0 +1,59 @@
+@import "../../../assets/font.scss";
+@import "../../../assets/color.scss";
+
+.activityHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  > span:nth-child(2) {
+    font-weight: bold;
+  }
+}
+
+.activityIcon {
+  @include fontSize(17);
+  margin-right: 5px;
+}
+
+.spinloader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100%;
+}
+
+.activityMessageContainer {
+  display: flex;
+  flex-direction: row;
+  > span:nth-child(1) {
+    @include fontSize(19);
+  }
+  div {
+    margin-left: 10px;
+    span:nth-child(1) {
+      @include fontSize(2);
+      color: $menu-link-color;
+      display: flex;
+      text-transform: lowercase;
+    }
+    span:nth-child(2) {
+      @include fontSize(2);
+      color: $activity-sub-text-color;
+      margin-top: 5px;
+    }
+  }
+}
+
+.activityMessagesContainer {
+  max-height: 300px;
+  min-height: 100px;
+  overflow: auto;
+  > div {
+    > div {
+      padding: 15px 5px;
+    }
+    > div:nth-child(odd) {
+      background: $activity-background-color;
+    }
+  }
+}

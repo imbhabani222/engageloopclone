@@ -1,0 +1,114 @@
+@import "./../../assets/color.scss";
+@import "./../../assets/font.scss";
+
+.backIcon {
+  color: $white-color;
+  cursor: pointer;
+  @include fontSize(14);
+}
+.mebuSidebarLogo {
+  width: 180px;
+  margin-left: 40px;
+}
+.tempSidebar {
+  min-height: calc(100vh - 55px);
+  position: absolute;
+  width: 60px;
+  background: $feedback-btn;
+}
+.menuSideRow {
+  padding: 25px 0;
+.menuContainer {
+  display: flex !important;
+  cursor: pointer;
+  div {
+    @include fontSize(14);
+    display: inline-flex;
+    align-items: center;
+    height: 53px;
+    transition: 0.5s;
+    transition-timing-function: linear;
+    &:nth-child(1) {
+      color: $menusideBarIcon-color;
+      justify-content: center;
+      width: 60px;
+      background: $feedback-btn;
+      span {
+        @include fontSize(14);
+      }
+    }
+    &:nth-child(2) {
+      padding: 0 24px;
+      width: calc(100% - 60px);
+      span {
+        color: $white-color;
+        &:nth-child(1) {
+          @include fontSize(6);
+        }
+      }
+    }
+    .textWithRightArrow {
+      @include fontSize(8);
+      text-align: right !important;
+      flex-grow: 1;
+      color: $white-color;
+      display: none;
+    }
+  }
+  &:hover {
+    div {
+      &:nth-child(1) {
+        background: $menuSidebarIcon-hover-color;
+        color: $white-color;
+      }
+      &:nth-child(2) {
+        background: $primary-color;
+      }
+      .textWithRightArrow { 
+        display: block;
+      }
+    }
+  }
+}
+}
+.active {
+  div {
+    &:nth-child(1) {
+      background: $menuSidebarIcon-hover-color;
+      color: $white-color;
+    }
+    &:nth-child(2) {
+      background: $primary-color;
+    }
+  }
+}
+
+.menuDivider {
+  background-color: $divider-color;
+}
+
+.menuTextContainer {
+  @include fontSize(14);
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  height: 53px;
+  cursor: pointer;
+  padding: 0 24px;
+  &:hover {
+    background: $primary-color;
+  }
+  span {
+    color: $white-color;
+  }
+}
+
+.textClass {
+  @include fontSize(6);
+  color: $white-color;
+}
+.menuDivider {
+  background: $menuSideBarBorder-color;
+  margin: 0 !important;
+  position: relative;
+}

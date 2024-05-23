@@ -1,0 +1,19 @@
+@import "../../assets/color.scss";
+
+.announcementContainer {
+  min-height: 180px;
+}
+
+.ant-carousel .slick-dots li button{
+  background-color: $dots-color;
+  height: 8px !important;
+  width: 8px !important;
+  border-radius: 50%;
+}
+
+.ant-carousel .slick-dots li.slick-active {
+  width: 16px;
+  button {
+    background-color: $dots-hover-color !important;
+  }
+}

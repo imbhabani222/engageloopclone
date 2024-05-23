@@ -1,0 +1,550 @@
+@import "../../assets/style.scss";
+
+.content-root {
+    padding-bottom: 40px;
+    @media (max-width: 577px) {
+        margin: 0 20px;
+    }
+    .header-sub-link{
+        .ant-menu {
+        color: $sub-menu-color;
+        background: transparent;
+        li {
+            @include fontWeight(100);
+            &:hover {
+            color: $black-color;
+            @include fontWeight(100);
+            border-bottom: 4px solid $sub-menu-border-color;
+            }
+        }
+        }
+        .ant-menu-item {
+            border-bottom: 4px solid transparent;
+        }
+        .ant-menu-item-selected {
+            @include fontWeight(100);
+            color: $black-color;
+            border-bottom: 4px solid $sub-menu-border-color;
+        }
+        .first-sub-menu{
+            margin: 0 20px 0 0px;
+        }
+    }
+    .site-layout-content{
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+        background-color: $white-color;
+        h2{
+            @include fontSize(6);
+            @include fontWeight(100);      
+        }
+       
+        .emp-form-area{
+            background: $white-color;
+            margin : 5px 0 0 0;
+            .import {
+                text-align: right;
+                padding: 10px 20px;
+                a {
+                    color: $light-black-color;
+                    @include fontSize(2);
+                }
+            }
+            .headerCol {
+                display: flex;
+                align-items: center;
+                .headerTitle {
+                    @media (min-width: 576px) {
+                        ::after {
+                            border-right: 1px solid $border-fade-color;
+                            margin: 0 40px;
+                            content: " ";
+                        }
+                     }
+             
+                }
+                .searchBox {
+                    border-radius: 20px;
+                    .ant-input {
+                        margin-right: 20px;
+                    }
+                    .ant-input-affix-wrapper {
+                        border-radius: 20px;
+                        .ant-input-suffix {
+                            left: -20px;
+                            position: relative;
+                        }
+                    }
+                    
+                    .ant-input-group-addon {
+                        left: -31px;
+                        border-radius: 50%;
+                        width: 30px;
+                        height: 30px;
+                        background: transparent;
+                        box-shadow: none;
+                        :last-child {
+                            border-radius: 50%;
+                        }
+                        button {
+                            border-radius: 50% !important;
+                            background:transparent;
+                            color: $svg-color;
+                            box-shadow: none;
+                            height: 30px;
+                             width: 30px;
+                             span {
+                                left: -5px;
+                                position: relative;
+                             }
+                            &:hover {
+                                background: $light-grey-color;
+                                color: $black-color;
+                                border-radius: 50%;
+                            }
+
+                        }
+                    }
+                }
+            }
+            .searchBtn {
+                padding: 5px 10px;
+                border-radius: 20px;
+                border: 1px solid $search-border-color;
+                svg {
+                    color: $menusideBarIcon-color;
+                }
+             }
+             .searchrow {
+                padding: 10px 0;
+                 
+             }
+             .ant-input-search-button {
+                border-radius: 0 20px 20px 0 !important;
+            }
+            .search-row {
+                padding: 3px 22px;
+           }
+           .ant-upload-list-picture-card-container {
+            position: absolute;
+            top: 18px;
+            left: 34px;
+            width: 62px;
+            height: 55px;
+            border: none;
+            .ant-upload-list-item {
+                border: none;
+            }
+        }
+            .divider{
+                margin: 0;
+            }
+            .wrapper {
+                max-height: 400px;
+                width: 100px;
+              }
+              .ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+                  height: 27px;
+              }
+              .ant-select-selection-item {
+                  line-height: 26px;
+              }
+              .ant-select-selection-placeholder {
+                  line-height: 26px;
+              }
+            .orgonboarding{
+                margin: 40px 0 0 0;
+                .userBtn{
+                    background: transparent;
+                    border:none;
+                    box-shadow: none;
+                    padding: 0px;
+                    @include fontWeight(100);
+                    @include fontSize(1);
+                    color: $link-color;
+                }
+                .roleSelection{
+                    .ant-select-selector {
+                        border-color: $input-border-color;
+                        border-radius: 4px;
+                    }
+                }
+                .ant-upload-drag {
+                    border-radius: 4px;
+                    background: $white-color;
+                }
+                .ant-select {
+                    @include fontSize(2);
+                }
+                .ant-input {
+                    border-radius: 4px;
+                    border-color: $input-border-color;
+                    @include fontSize(2);
+                }
+                .domainName {
+                    text-transform: lowercase;
+                }
+
+                .ant-input:placeholder-shown {
+                text-transform: capitalize !important;
+                }                
+                
+                .ant-form-item-has-error .ant-input, .ant-form-item-has-error .ant-input-affix-wrapper, .ant-form-item-has-error .ant-input:hover, .ant-form-item-has-error .ant-input-affix-wrapper:hover {
+                    border-color: $error-color;
+    
+                }
+                .ant-form-item-explain {
+                    div {
+                    display: none;
+                    }
+                }
+                
+                .asterik {
+                    color: $require-color;
+                }
+                .cross-icon{
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    height: 100%;
+                    text-align: center;
+                }
+                .add-btn{
+                    text-align: right;
+                    padding: 0px 20px;
+                }
+               .form-row_selection {
+                   margin: 15px 0;
+               }
+                .form-row{
+                    padding: 15px;
+                }
+                .form-user-row {
+                    padding: 5px 15px 0px 15px;
+                }
+                .gutter-row{
+                    padding: 0px 20px;
+                }
+                .btn-row {
+                    padding: 0 20px;
+                    text-align: right;
+                }
+                .form-user-section{
+                    background: $bg-grey-color;
+                    margin: 15px 78px;
+                    h2{
+                        padding: 10px;
+                        @include fontSize(2);
+                        @include fontWeight(100);
+                    }
+                }
+                .ant-btn-primary {
+                    background-color: $primary-color;
+                    border: none;
+                    border-radius: 5px;
+                    text-transform: uppercase;
+                    @include fontSize(2);
+                    &:hover,
+                    &:focus {
+                    background-color: $btn-hover;
+                    }
+                }
+                .btn-white{
+                    background-color: $white-color;
+                    margin-right: 20px;
+                    border-radius: 5px;
+                    @include fontSize(2);
+                    border-color: $primary-color;
+                    color: $primary-color;
+                    text-transform: uppercase;
+                    &:hover,
+                    &:focus {
+                        background-color: $btn-hover;
+                        color: $white-color;
+                        border: 1px solid $btn-hover;
+                    }
+                }
+              
+                }
+                h2{
+                    padding: 10px 20px;
+                    @include fontSize(4);
+                    @include fontWeight(200);
+                }
+                h3{
+                    @include fontSize(1);
+                    @include fontWeight(100);
+                }
+                .users {
+                    padding: 10px 40px;
+                    @include fontSize(1);
+                    @include fontWeight(400);
+                    text-align: right;
+                    color: $black-color;
+                }
+                .searchBtn {
+                    padding: 5px 10px;
+                    border-radius: 20px;
+                    border: 1px solid $search-border-color;
+                    svg {
+                        color: $menusideBarIcon-color;
+                    }
+                 }
+                .view-container-root{
+                    .ant-table table { border-spacing: 0 2px;  }
+                    .tableempView {
+                        .linkClass {
+                            a {
+                                color: $table-row-font-color;
+                            }
+                            
+                        }
+                        .ant-table-column-sorters {
+                            padding: 10px 16px;
+                        }
+                        .ant-table-pagination {
+                            justify-content: center;
+                        }
+                        .ant-table-content {
+                            overflow: auto;
+                        }
+                        .Disabled {
+                            pointer-events: none;
+                        }
+                        .ant-table-column-sorter-up {
+                            background: none;
+                        }
+                        .ant-table-column-sorter-down {
+                            background: none;
+                        }
+                        th {
+                        background: $table-header-secondary;
+                        @include fontSize(3);
+                        @include fontWeight(200);
+                        color: $black-color;
+                    }
+                    .ant-table-tbody {
+                        tr {
+                            .firstChild {
+                                    padding-left: 20px
+                             }
+                        }
+                    }
+                    .ant-table-thead {
+                        tr {
+                            .firstChild {
+                                    padding-left: 5px
+                             }
+                        }
+                    }
+                    tr{
+                       th {
+                           &.rowHeader {
+                               text-align: center;
+                           }
+                       }
+                       td {
+                           border-bottom: 1px solid $footer-border-color;
+                           @include fontSize(2);
+                           @include fontWeight(100);
+                          
+                       }
+                        background: $white-color;
+                        margin-bottom: 5px;
+                        @include fontSize(2);
+                        color: $table-row-font-color;
+                        &:hover {
+                            td {
+                                background: $table-row-color;
+                            }
+                        }
+                    }
+                    .deactivate td {
+                        opacity: 0.6;
+                    }
+                   
+                    .activateIcon {
+                        color: $active-color;
+                        margin-right: 5px;
+                        @include fontSize(4);
+                    }
+                    .deactivateIcon {
+                        color: $deactive-color;
+                        margin-right: 5px;
+                    }
+                    .reactivateIcon {
+                        color: $reactive-color;
+                        margin-right: 5px;
+                    }
+                    .pendingIcon {
+                        color: $pending-color;
+                        margin-right: 5px;
+                    }
+                    .action-icon {
+                        a{
+                            padding: 7px;
+                            background: $white-color;
+                            border-radius: 4px;
+                            border: 1px solid $border-color;
+                            &:hover{
+                                border-color: $icon-color;
+                            }
+                        }
+                        
+                        .icons {
+                            color: $icon-color;
+                            @include fontSize(4);
+                        }
+                    
+                    }
+
+            }
+          
+        }
+    }
+        .image-dragger{
+            p {
+                text-align: left;
+                @include fontSize(1);
+                svg {
+                    color: $black-color;
+                    @include fontSize(1);
+                }
+            }
+            .uploader {
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    -webkit-box-align: center;
+                    -ms-flex-align: center;
+                    align-items: center;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;
+                    height: 100%;
+                    text-align: center;
+                    background: $white-color;
+                    background-color: $white-color;
+                    border: 1px dashed $dashed-border-color;
+                    width: 62px;
+                    height: 55px;
+            }
+            &__description{
+                padding: 0px 20px;
+            }
+        }
+
+    }
+    .footer{
+        position : fixed;
+        background: $white-color;
+        bottom : 0;
+        line-height: 10px;
+        height:40px;
+        text-align:center;
+        width: 100%;
+        line-height: 5px;
+    }
+}
+.Modalcontainer {
+    border-radius: 10px;
+    .ant-modal-body {
+       padding: 10px;
+    }
+    .ant-modal-content {
+        border-radius: 10px 10px 0 0;
+        .ant-modal-close-x {
+            color: $white-color;
+            background: $modal-bg-icon-color;
+            width:35px;
+            height: 35px;
+            line-height: 35px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+        .ant-modal-header {
+            border-radius: 10px 10px 0px 0px;
+            background: $modal-header-bg;
+            .ant-modal-title {
+                color: $white-color;
+            }
+        }
+        .modalBody {
+            background: $white-color;
+            margin :10px;
+            h2 {
+                padding: 10px 20px;
+                @include fontSize(6);
+                @include fontWeight(100);
+                margin: 0;
+            }
+            .ant-divider {
+                margin: 0;
+            }
+            .row {
+                padding: 20px;
+                .title {
+                    h4{
+                        @include fontSize(3);
+                        @include fontWeight(100);
+                        margin: 0 0 5px 0;
+                    }
+                }
+                .subtitle {
+                    h4{
+                        @include fontSize(3);
+                        @include fontWeight(100);
+                        margin: 20px 0 5px 0;
+                    }
+                }
+                .orgData {
+                    margin-bottom: 20px;
+                    p {
+                        @include fontSize(2);
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                    .tag {
+                        margin-top: 10px; 
+                        background: $tag-bg-color;
+                        max-width: 100px;
+                        border-radius: 10px;
+                        text-align: center;
+                        padding: 2px;
+                    }
+                }
+                .data {
+                    p {
+                        @include fontSize(2);
+                        line-height: 1.6;
+                        margin: 0;
+                    }
+                    
+                }
+                .logoRow {
+                    display: flex;
+                }
+                .ogoArea {
+                    margin-top:10px;
+                    .orgLogo {
+                        width: 200px;
+                        height: 100px;
+                        padding: 10px;
+                        background: $white-color;
+                        border: 1px solid $logo-border;
+                        border-radius: 4px;
+                        object-fit: contain;
+                    }
+                }
+            }
+        }
+    }
+}
+.selectOption {
+    @include fontSize(2);
+}

@@ -1,0 +1,58 @@
+@import "../../../assets/color.scss";
+@import "../../../assets/font.scss";
+
+.dashboardContainer {
+  @media (min-width: 769px) {
+    padding: 0 60px;
+  }
+}
+
+.dashboardRow {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  @media (max-width: 480px) {
+    margin-top: 8px;
+  }
+  @media (max-width: 576px) and (min-width: 481px) {
+    margin-top: 16px;
+  }
+  @media (max-width: 768px) and (min-width: 577px) {
+    margin-top: 24px;
+  }
+}
+
+.dashoboardCardContainer {
+  background-color: $white-color;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: 1px Solid;
+  border-color: $card-border-0color;
+  border-radius: 6px;
+  padding: 20px;
+  &:hover {
+    background-color: $card-body-active-color;
+    box-shadow: 2px 2px 2px 0 rgba(41, 87, 196, 0.16);
+  }
+  span:first-child {
+    @include fontSize(50);
+    @media (max-width: 480px) {
+      @include fontSize(40);
+    }
+  }
+}
+
+.dashboardText {
+  @include fontSize(4);
+  color: $black-color;
+  text-align: center;
+  margin-top: 5px;
+  @media (max-width: 480px) {
+    @include fontSize(2);
+  }
+}

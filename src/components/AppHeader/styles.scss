@@ -1,0 +1,78 @@
+@import "../../assets/font.scss";
+@import "../../assets/color.scss";
+@import "../../assets/app.scss";
+
+.headerRow {
+  box-shadow: 0 2px 6px 0 rgba(68, 68, 68, 0.25);
+   background: $header-bg-color;
+   z-index: 99;
+   .mobileIcon {
+     display: none;
+     @media (max-width: 577px) {
+      display: block;
+      display: flex;
+     align-items: center;
+    }
+   }
+}
+.ant-layout-header {
+  background: $header-bg-color;
+  padding: 0;
+  height: $app-header-height;
+  display: flex;
+  align-items: center;
+  .ant-menu-dark {
+    background: transparent;
+  }
+  .fold-icon{
+    @include fontSize(14);
+    color: $white-color;
+  }
+  .menu{
+    margin-left: auto;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    .icons {
+      background: $icon-bg-color;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      margin: 0 10px 0 0;
+    }
+    .arrowIcon {
+      @include fontSize(-2);
+      padding: 0 0 0 5px
+    }
+    .personIcon {
+      padding: 0 5px 0 0;
+    }
+    a {
+      color: $menu-link-color;
+      @include fontSize(2);
+      @include fontWeight(100);
+    }
+    ul {
+      border: none;
+      padding: 0;
+    }
+    .accountLabel {
+      @media (max-width: 577px) {
+        display: none;
+      }
+    }
+  }
+  .logo{
+    width: 180px;
+    img {
+      width: 100%;
+    }
+  }
+  .ant-menu{
+    text-align: right;
+  }
+}

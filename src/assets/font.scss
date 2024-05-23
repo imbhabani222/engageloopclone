@@ -1,0 +1,11 @@
+/* font-size */
+$base-font-size: 10px;
+$base-font-weight: 400;
+
+@mixin fontSize($size) {
+  font-size: $base-font-size + $size;
+}
+
+@mixin fontWeight($size) {
+  font-weight: $base-font-weight + $size;
+}

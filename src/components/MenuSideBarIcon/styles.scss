@@ -1,0 +1,52 @@
+@import "../../assets/color.scss";
+@import "../../assets/font.scss";
+
+.menuSideBarIconContainer {
+  width: 60px;
+  border-bottom: 1px Solid $menuSideBarBorder-color;
+  display: inline-block;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
+.menuSidebarIcons {
+  @include fontSize(14);
+  color: $menusideBarIcon-color;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+  &:hover {
+    svg {
+      path{
+        fill: $white-color;
+      }
+    }
+  }
+}
+.menuSidebarIcon {
+  @include fontSize(14);
+  color: $menusideBarIcon-color;
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+  &:hover {
+    background: $menuSidebarIcon-hover-color;
+    color: $white-color;
+  }
+ 
+  span {
+    cursor: pointer;
+  }
+}
+.active {
+  background: $menuSidebarIcon-hover-color;
+  color: $white-color;
+}
+
+.logoutIcon {
+  transform: rotate(-90deg);
+}

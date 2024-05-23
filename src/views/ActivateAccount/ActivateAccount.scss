@@ -1,0 +1,30 @@
+@import "../../assets/style.scss";
+
+.activate-account-right-area {
+  padding: 100px 25px 0px 25px;
+      .title-text { 
+        h2 {
+          margin: 10px 0;
+        }
+        p {
+          color: $text-color;
+        }
+      }
+      .login-form-area {
+        margin-top: 10px;
+        text-align: center;
+        img {
+          width: 70px;
+          height: 70px;
+        }
+        h2{
+          color: $sub-layout-header;
+          @include fontSize(6);
+          @include fontWeight(200);
+          margin: 20px 0;
+        }
+        p {
+          color: $text-color;
+        }
+      }
+}

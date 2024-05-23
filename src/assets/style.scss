@@ -1,0 +1,40 @@
+@import "./color.scss";
+@import "./font.scss";
+@import "./app.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-main: 'Inter',  sans-serif;
+body {
+  font-family: $font-main;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.ant-btn-primary {
+  background-color: $primary-color;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  @include fontSize(2);
+  &:hover,
+  &:focus {
+  background-color: $btn-hover;
+  }
+}
+.btn-white{
+  background-color: $white-color;
+  margin-right: 20px;
+  border-radius: 5px;
+  @include fontSize(2);
+  border: 1px solid  $primary-color;
+  color: $primary-color;
+  text-transform: uppercase;
+  &:hover,
+  &:focus {
+      background-color: $btn-hover;
+      color: $white-color;
+      border: 1px solid $btn-hover;
+  }
+}

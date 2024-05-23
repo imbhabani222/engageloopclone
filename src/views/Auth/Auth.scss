@@ -1,0 +1,130 @@
+@import "../../assets/style.scss";
+
+.login-bg {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0 0;
+  background: $white-color;
+  position: fixed;
+  .left-area{
+    background-image: url(../../assets/img/Login-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 100vh;
+    .logo-row {
+      margin: 40px;
+      .logo {
+        width: 180px;
+      }
+    }
+    .left-area-text {
+      height: calc(100vh - 150px);
+      display: flex;
+      align-items: center;
+      color: $white-color;
+      margin: 0 100px 0 40px ;
+      @include fontSize(6);
+      line-height: 1.9;
+      div {
+          ::before {
+            content:url("../../assets//img/icons/quotes-icon.png") "\A";
+           white-space: pre;
+        }
+        ::After {
+          content: "\A" url("../../assets//img/icons/text-icons.png") "\A";
+         white-space: pre;
+         float: right;
+      }
+      }
+    }
+
+  }
+  .right-area {
+    background: $white-color;
+
+    .logo {
+      margin-top: 30px;
+      width: 180px;
+    }
+    .right-area-row {
+      min-height: calc(100vh - 100px);
+      @media (min-width: 577px) {
+        min-height: 100vh;
+      }
+    }
+    .ant-form-item-explain {
+    visibility: hidden;
+    }
+    .brand-text {
+      position: absolute;
+      min-width: 100%;
+      bottom: 0px;
+      text-align: center;
+      p {
+        color: $desc-color;
+        @include fontSize(1);         
+      }
+      .link {
+        color: $link-color;
+      }
+    }
+    .secureDesc {
+      color: $desc-color;
+      @include fontSize(1);
+      text-align: center;
+    }
+    .secureIcon {
+      width: 12px;
+      margin: 0 5px 4px 0;
+    }
+    .ant-input {
+      border-radius: 4px;
+      @include fontSize(4);
+      @include fontWeight(100);
+    }
+    .emailInput {
+      ::placeholder  {
+        color: $placeholder-color;
+        @include fontSize(2);
+        @include fontWeight(100);
+       }
+      .ant-form-item-control-input {
+        &:hover, &:focus{
+          box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.11);
+        }
+      }
+
+      &:hover, &:focus {
+        ::placeholder  {
+          color: $hover-placholder-color;
+         }
+      }
+    }
+    .passwordInput{
+      ::placeholder  {
+        color: $input-border-color;
+        @include fontSize(2);
+        @include fontWeight(100);
+       }
+      .ant-input-affix-wrapper {
+      &:hover, &:focus{
+        box-shadow: 0 4px 10px 3px rgba(0, 0, 0, 0.11);
+      }
+    }
+    &:hover, &:focus {
+      ::placeholder  {
+        color: $hover-placholder-color;
+       }
+    }
+    }
+    .ant-input-password-icon {
+      @include fontSize(1);
+      color: $black-color;
+    }
+  }
+  .text-blue {
+    color: $black-color;
+    @include fontWeight(800);
+  }
+}

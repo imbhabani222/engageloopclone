@@ -1,0 +1,52 @@
+@import "../../assets/font.scss";
+@import "../../assets//color.scss";
+
+.welcomeContainer {
+  position: relative;
+  padding-top: 30px;
+  @media (max-width: 576px) {
+    padding-top: 15px;
+  }
+  > img {
+    height: 175px;
+    width: 100%;
+  }
+}
+
+.welcomeImage {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+.welcomeSmallImage {
+  @media (min-width: 577px) {
+    display: none;
+  }
+}
+
+.welcomeMessage {
+  @include fontSize(20);
+  color: $white-color;
+  font-weight: bold;
+  position: absolute;
+  margin-top: 43px;
+  margin-left: 38px;
+  @media (max-width: 480px) {
+    @include fontSize(12);
+    margin-left: 12px;
+  }
+}
+
+.welcomeUserName {
+  @include fontSize(12);
+  text-transform: capitalize;
+  color: $white-color;
+  position: absolute;
+  margin-left: 38px;
+  margin-top: 87px;
+  @media (max-width: 480px) {
+    @include fontSize(8);
+    margin-left: 12px;
+  }
+}

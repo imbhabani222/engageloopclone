@@ -1,0 +1,63 @@
+@import "../../../assets/style.scss";
+
+.importer {
+    margin-top: $app-sub-header-height;
+    box-shadow: 0 3px 20px 2px rgba(0, 0, 0, 0.13);
+    .ant-drawer-header {
+        text-align: center;
+        box-shadow: 0 3px 20px -4px rgba(0, 0, 0, 0.13);
+    }
+    .ant-drawer-title {
+        @include fontWeight(300);
+    }
+    .ant-drawer-mask {
+        background-color: rgba(181, 181, 181, 0.8);
+    }
+    .uploadContainer {
+        background: $drawer-container-bg;
+        border: 1px solid $drawer-container-border;
+        border-radius: 4px;
+        padding: 25px;
+        text-align: center;
+        svg {
+            @include fontSize(14);
+            color: $primary-color
+        }
+        h2 {
+            @include fontSize(4);
+            @include fontWeight(200);
+            margin: 10px 0;
+        }
+        p {
+            @include fontSize(2);
+            color: $menusideBarIcon-color;
+            margin:0;
+            padding:0;
+        }
+        a {
+            color: $drawer-link-color;
+            @include fontWeight(100);
+            @include fontSize(3);
+        }  
+    }
+    .btn {
+        margin: 20px;
+        text-align: center;
+        button {
+            margin: 10px;
+        }
+    }
+}
+
+.importUploadbutton {
+    background: $drawer-btn-bg;
+    margin: 20px 0;
+    color: $white-color;
+    border-radius: 4px;
+    padding: 20px 30px;
+    line-height: 0;
+    &:hover, &:active, &:focus {
+        background: $drawer-btn-bg;
+        color: $white-color;
+    }
+}

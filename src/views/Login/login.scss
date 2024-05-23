@@ -1,0 +1,99 @@
+@import "../../assets/style.scss";
+
+.login-right-area {
+  @media (min-width: 577px) {
+    padding: 100px 25px 0px 25px;
+  }
+      .title-text { 
+        h2 {
+          margin: 10px 0;
+          @include fontSize(14);
+          @include fontWeight(200);
+        }
+        p {
+          color: $text-color;
+        }
+      }
+      .brand-text {
+        position: absolute;
+        min-width: 55%;
+        bottom: 0px;
+        text-align: center;
+        p {
+          color: $text-color;
+          @include fontSize(1);
+        }
+        .link {
+          color: $link-color;
+        }
+      }
+      h4 {
+        @include fontSize(2);
+        color: $text-color;
+        @include fontWeight(100);
+      }
+      .rememberLabel {
+        @include fontSize(2);
+        @include fontWeight(100);
+        color: $text-color;
+      }
+      .login-form-area {
+        .divider {
+          margin: 20px 0 0 0;
+          background: $login-divider-color;
+          border: none;
+          height: 1px;
+        }
+        .success-msg {
+          margin: 10px 0px 10px 0px;
+          visibility: hidden;
+        }
+        .msg-visibility {
+          visibility: visible;
+        }
+        .alert-error {
+          padding: 4px 10px;
+          border-radius: 4px;
+          @include fontSize(1);
+        }
+        .login-form {
+          button {
+            width: 100%;
+          }
+          .googleBtn{
+            border: 1px solid $primary-color;
+            border-radius: 4px;
+          }
+          .ant-btn-primary {
+            background-color: $primary-color;
+            border: none;
+            border-radius: 5px;
+            &:hover,
+            &:focus {
+              background-color: $btn-hover;
+            }
+          }
+          .ant-checkbox-checked {
+            .ant-checkbox-inner {
+              background: $primary-color;
+              border-color: $primary-color;
+            }
+          }
+          .ant-input {
+            border-radius: 4px;
+          }
+          .login-form-forgot {
+            float: right;
+            color: $link-color;
+            @include fontSize(2);
+            @include fontWeight(100);
+          }
+          .ant-input-affix-wrapper {
+            border-radius: 5px;
+          }
+          svg {
+            color: $svg-color;
+          }
+        }
+      }
+}

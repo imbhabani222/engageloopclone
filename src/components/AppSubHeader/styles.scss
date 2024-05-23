@@ -1,0 +1,26 @@
+@import "../../assets/font.scss";
+@import "../../assets/color.scss";
+@import "../../assets/app.scss";
+
+.subheader {
+  height: $app-sub-header-height;
+  display: flex;
+  align-items: center;
+  color: $white-color;
+  background: $top-header-bg-color;
+  @include fontSize(3);
+  .subheader_text {
+    text-align: right;
+    span {
+      @include fontWeight(100);
+    }
+  }
+  .subheader_time_text {
+    text-align: right;
+    @include fontWeight(100);
+  }
+  .icons {
+    width: 18px;
+    margin: 0 10px 0 0;
+  }
+}

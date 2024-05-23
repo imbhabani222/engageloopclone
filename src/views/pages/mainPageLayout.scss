@@ -1,0 +1,45 @@
+@import "../../assets/style.scss";
+
+.content-root {
+    padding-bottom: 40px;
+    .title{
+         margin: 15px 20px;
+         @include fontSize(8);
+    }
+    .site-layout-content{
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.19);
+        background-color: $white-color;
+        .page-title {
+            padding: 10px 20px 0px 20px;
+            h2{
+                @include fontSize(6);
+                @include fontWeight(100);      
+            }
+        }
+        .divider{
+            margin: 0;
+        }
+        .page-body {
+            padding: 15px 20px 30px 20px;
+            @include fontSize(3);
+            p {
+                @include fontSize(3);
+            }
+            .leftCol {
+                p {
+                    @include fontWeight(300);
+                }
+            }
+            .rightCol {
+                p {
+                    @include fontWeight(100);
+                }
+            }
+            .centerCol {
+                    @include fontWeight(400); 
+                    margin-right: 40px;
+            }
+            
+        }
+    }
+}

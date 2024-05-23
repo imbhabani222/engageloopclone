@@ -1,0 +1,65 @@
+@import "../../assets/style.scss";
+
+.forgot-right-area {
+  padding: 100px 25px 0px 25px;
+      .title-text {
+        h2 {
+          margin: 10px 0;
+          @include fontSize(14);
+          @include fontWeight(300);
+        }
+        p {
+          color: $text-color;
+        }
+      }
+      h4 {
+        @include fontSize(2);
+        color: $text-color;
+        @include fontWeight(100);
+      }
+      .login-form-area {
+        .success-msg {
+          margin: 10px 0px 10px 0px;
+          visibility: hidden;
+        }
+        .msg-visibility {
+          visibility: visible;
+        }
+        .alert-error {
+          padding: 4px 10px;
+          border-radius: 4px;
+          @include fontSize(1);
+        }
+        .login-form {
+          button {
+            width: 100%;
+          }
+          .ant-btn-primary {
+            background-color: $primary-color;
+            border: none;
+            border-radius: 5px;
+            &:hover,
+            &:focus {
+              background-color: $btn-hover;
+            }
+          }
+          .ant-form-item-explain {
+            div {
+              display: none;
+            }
+          }
+          .ant-checkbox-checked {
+            .ant-checkbox-inner {
+              background: $primary-color;
+              border-color: $primary-color;
+            }
+          }
+          .ant-input-affix-wrapper {
+            border-radius: 5px;
+          }
+          svg {
+            color: $svg-color;
+          }
+        }
+      }
+}

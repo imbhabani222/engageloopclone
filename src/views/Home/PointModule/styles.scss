@@ -1,0 +1,26 @@
+@import "../../../assets/color.scss";
+@import "../../../assets/font.scss";
+
+.pointRow {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.pointsText {
+  @include fontSize(4);
+  @include fontWeight(100);
+  color: $points-text-color;
+}
+
+.pointsValue {
+  @include fontSize(2);
+  color: $points-value-color;
+  border-radius: 15px;
+  padding: 5px;
+  display: block;
+  text-align: center;
+}
